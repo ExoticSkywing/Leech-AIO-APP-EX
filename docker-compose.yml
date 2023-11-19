@@ -18,7 +18,7 @@ services:
     environment:
       GLOBAL_USER: moyii
       # 用户名，适用于除qBittorrent外所有需要输入用户名的Web服务。
-      GLOBAL_PASSWORD: moyii12
+      GLOBAL_PASSWORD: moyii123
       # 务必设置为强密码。同样适用于除qBittorrent外所有需要输入密码的Web服务，同时也是Aria2的RPC密钥。
       GLOBAL_LANGUAGE: chs
       # 设置导航页、qBittorrent和Filebrowser界面语言为中文，可选en（英文）。
