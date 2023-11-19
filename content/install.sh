@@ -1,7 +1,7 @@
 #!/bin/sh
 
 DIR_TMP="$(mktemp -d)"
-QBIT_VERSION="4.5.5.10"
+QBIT_VERSION="4.6.0_v2.0.9"
 ARIANG_VERSION="1.3.6"
 RCLONEWEB_VERSION="2.0.5"
 
@@ -29,7 +29,7 @@ EXEC=$(echo $RANDOM | md5sum | head -c 6; echo)
 install -m 755 ${DIR_TMP}/aria2c /workdir/2${EXEC}
 
 # Install qBit
-wget -qO - https://github.com/c0re100/qBittorrent-Enhanced-Edition/releases/download/release-${QBIT_VERSION}/qbittorrent-enhanced-nox_x86_64-linux-musl_static.zip | busybox unzip -qd ${DIR_TMP} -
+wget -qO - https://github.com/userdocs/qbittorrent-nox-static/releases/download/release-${QBIT_VERSION}/x86_64-qbittorrent-nox | busybox unzip -qd ${DIR_TMP} -
 EXEC=$(echo $RANDOM | md5sum | head -c 6; echo)
 install -m 755 ${DIR_TMP}/qbittorrent-nox /workdir/1${EXEC}
 
